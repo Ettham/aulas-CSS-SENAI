@@ -10,19 +10,26 @@
     --primary-color:#47beba;
     --secondary-color:#f22e52;
     --text-color-button:#fff;
+    --padding-button:1rem 2rem;
 }
 
 .primary-color{
     background: var(--primary-color);
     color: var(--text-color-button);
+    padding: var(--padding-button);
+    display: inline-block;
+    border-radius: 5px;
 }
 
 .secondary-color{
     background: var(--secondary-color);
     color: var(--text-color-button);
+    padding: var(--padding-button);
+    display: inline-block;
+    border-radius: 5px;
 }
 
-container{
+.container{
     width: 1172px;
     margin: auto;
 }
@@ -42,6 +49,7 @@ h3{
 
 a{
     text-decoration: none;
+    color: #160647;
 }
 
 /*top header*/
@@ -63,7 +71,100 @@ a{
     align-items: center;
 }
 
+.top-header .loga h1{
+    margin-right: 6px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
   nav ul{
     display: flex;
     list-style: none;
+}
+
+nav ul li{
+    margin: 0 16px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+}
+
+.log .primary-color{
+    margin-left: 16px;
+}
+
+/*cta*/
+
+.cta{
+    padding: 208px 0;
+}
+
+.cta .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta h2{
+    font-size: 64px;
+    columns: #160647;
+    text-align: center;
+}
+
+.cta p{
+    margin: 30px o 40px;
+    width: 697px;
+    text-align: center;
+    color: #6c6c6c;
+}
+
+.cta a{
+    margin: 0 10px;
+} 
+
+.cta a:hover{
+    box-shadow: 0 0 10px #aaa;
+}
+
+/*logo*/
+
+.brands{
+    margin:121px 155px; 
+}
+.brands .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*about-us*/
+
+.about-us .container{
+    display: flex;
+}
+
+.about-us h3{
+    margin-bottom: 100px;
+}
+
+.about-us .container .about-us-description{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-us .container .about-us-description h4{
+    font-size: 40px;
+    font-weight: 600px;
+    text-transform: capitalize;
+}
+
+.about-us .container .about-us-description p{
+    width: 383px;
+    color: #818181;
 }
